@@ -5,26 +5,25 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![github][github-shield]][github-url]
+[![Twitter][twitter-shield]][twitter-url]
+[![Linktree][linktree-shield]][linktree-url]
+[![Instagram][instagram-shield]][instagram-url]
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <!-- <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
-  <h1 align="center">Smart Contract Deployment with Hardhat, Solidity, MetaMask, Polygon Mumbai Testnet, and Alchemy</h1>
+  <h1 align="center">Smart Contract Deployment into Polygon using Hardhat, Solidity, MetaMask and Alchemy</h1>
 
   <p align="center">
-    This project demonstrates the deployment of a smart contract using Hardhat, Solidity, MetaMask, the Polygon Mumbai Testnet, and Alchemy. The deployment process involves setting up the development environment, writing and testing the smart contract, and deploying it to the Polygon Mumbai Testnet.
+    This project demonstrates the deployment of a smart contract into Polygon Mumbai network using Hardhat, Solidity, MetaMask and Alchemy. The deployment process involves setting up the development environment, writing and testing the smart contract, and deploying it to the Polygon Mumbai Testnet.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://wiki.polygon.technology/docs/pos/deploy/alchemy"><strong>How to deploy a smart contract using Alchemy »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </div>
 
@@ -35,28 +34,22 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#technologies">Technologies used</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
+      <a href="#prerequisits">Prerequisits</a>
+      <!-- <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-      </ul>
+      </ul> -->
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#getting-started">Getting started</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#additional-resources">Additional Resources</a></li>
   </ol>
 </details>
 
-### Technologies used
+## Technologies used
 
 * Hardhat <br/>
 A development environment for Ethereum that facilitates smart contract development, testing, and deployment.
@@ -85,7 +78,7 @@ Sign up on the Alchemy website and obtain an API key. This key will be used to c
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Initialize your project
+### 1. Initialize your project
 
 First, we’ll need to create a folder for our project. Navigate to your command line and type:
   ```sh
@@ -93,7 +86,7 @@ First, we’ll need to create a folder for our project. Navigate to your command
   cd hello-world
   ```
 
-### Installation
+### 2. Installation
 
 Now that we’re inside our project folder, we’ll use npm init to initialize the project.
 
@@ -102,7 +95,7 @@ intialize node package manager
    npm init -y
    ```
 
-### Install Hardhat
+### 3. Install Hardhat
 
 Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. 
 Globally install hardhat if it doesn't exist
@@ -110,13 +103,13 @@ Globally install hardhat if it doesn't exist
   npm install --save-dev hardhat
   ```
 
-### Create Hardhat project
+### 4. Create Hardhat project
 ```sh
 npx hardhat
 ```
 generate an empty hardhat.config.js project
 
-### Add project folders
+### 5. Add project folders
 Navigate to the root folder in the command line and type
 ```sh
 mkdir contracts
@@ -125,7 +118,7 @@ mkdir scripts
 * contracts/ is where we’ll keep our hello world smart contract code file
 * scripts/ is where we’ll keep scripts to deploy and interact with our contract
 
-### write the contract
+### 6. Write the contract
 
 1. navigate to the contracts folder and create Helloworld.sol
 2. Copy and paste this code into your Helloworld.sol file
@@ -146,7 +139,7 @@ contract HelloWorld {
 }
 ```
 
-### Connect with metamask and Alchemy
+### 7. Connect with metamask and Alchemy
 Install the dotenv package in the root directory
 ```sh
 npm install dotenv --save
@@ -157,12 +150,12 @@ API_URL = "https://polygon-mumbai.g.alchemy.com/v2/your-api-key"
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
-### Install ethers.js
+### 8. Install ethers.js
 ```sh
 npm install --save-dev @nomiclabs/hardhat-ethers "ethers@^5.0.0"
 ```
 
-### Update hardhat.config.js
+### 9. Update hardhat.config.js
 ```sh
 /**
 * @type import('hardhat/config').HardhatUserConfig
@@ -186,11 +179,11 @@ module.exports = {
 }
 ```
 
-### compile the smart contract
+### 10. Compile the smart contract
 ```sh
 npx hardhat compile
 ```
-### write our deploy script
+### 11. Write our deploy script
 navigate to the scripts folder and create deploy.js
 ```sh
 async function main() {
@@ -207,7 +200,7 @@ main()
   });
 ```
 
-### deploy your smart contracts
+### 12. Deploy your smart contracts
 ```sh
 npx hardhat run scripts/deploy.js --network polygon_mumbai
 ```
@@ -216,6 +209,13 @@ You should see something like this:
 Contract deployed to address: 0x3d94af870ED272Cd5370e4135F9B2Bd0e311d65D
 ```
 Go to the [polygon mumbai explorer](https://mumbai.polygonscan.com/) and search for your smart contract
+
+## Screenshots
+<a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/Screenshot0.png" alt="Logo" width="260" height="160">
+</a><br>
+Transaction details on alchemy
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -231,12 +231,6 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-<!-- CONTACT -->
-## Contact
-
-Vishnu Suresh Perumbavoor - [@vspeeeeee](https://twitter.com/vspeeeeee) - vishnusureshperumbavoor@gmail.com
-
 ## Additional Resources
 * [Hardhat Documentation](https://hardhat.org/docs)
 * [Solidity Documentation](https://docs.soliditylang.org/en/v0.8.20/)
@@ -247,15 +241,33 @@ Vishnu Suresh Perumbavoor - [@vspeeeeee](https://twitter.com/vspeeeeee) - vishnu
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/vishnusureshperumbavoor/polygon_mumbai_smart_contract/graphs/contributors
+
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/vishnusureshperumbavoor/polygon_mumbai_smart_contract/network/members
+
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/vishnusureshperumbavoor/polygon_mumbai_smart_contract/stargazers
+
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/vishnusureshperumbavoor/polygon_mumbai_smart_contract/issues
+
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[license-url]: https://github.com/vishnusureshperumbavoor/polygon_mumbai_smart_contract/blob/master/LICENSE.txt
+
 [product-screenshot]: images/screenshot.png
+
+[linkedin-shield]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+[linkedin-url]: https://www.linkedin.com/in/vishnu-suresh-perumbavoor/
+
+[twitter-shield]: https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white
+[twitter-url]: https://twitter.com/in/vspeeeeee
+
+[instagram-shield]: https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white
+[instagram-url]: https://www.instagram.com/vishnusureshperumbavoor/
+
+[linktree-shield]: https://img.shields.io/badge/linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white
+[linktree-url]: https://linktr.ee/vishnusureshperumbavoor2.0
+
+[github-shield]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
+[github-url]: https://github.com/vishnusureshperumbavoor
