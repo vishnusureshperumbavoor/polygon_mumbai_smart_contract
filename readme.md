@@ -1,9 +1,9 @@
 <a name="readme-top"></a>
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![MIT License][license-shield]][license-url] -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![github][github-shield]][github-url]
 [![Twitter][twitter-shield]][twitter-url]
@@ -17,10 +17,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a> -->
 
-  <h1 align="center">Smart Contract Deployment into Polygon using Hardhat, Solidity, MetaMask and Alchemy</h1>
+  <h1 align="center">Smart Contract Deployment into Polygon using Hardhat, MetaMask and Alchemy</h1>
 
   <p align="center">
-    This project demonstrates the deployment of a smart contract into Polygon Mumbai network using Hardhat, Solidity, MetaMask and Alchemy. The deployment process involves setting up the development environment, writing and testing the smart contract, and deploying it to the Polygon Mumbai Testnet.
+    This project demonstrates the deployment of a hello world smart contract into Polygon Mumbai network using Hardhat, Solidity, MetaMask and Alchemy. The deployment process involves setting up the development environment, writing and testing the smart contract, and deploying it to the Polygon Mumbai Testnet.
     <br />
     <a href="https://wiki.polygon.technology/docs/pos/deploy/alchemy"><strong>How to deploy a smart contract using Alchemy »</strong></a>
     <br />
