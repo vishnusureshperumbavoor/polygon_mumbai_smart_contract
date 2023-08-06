@@ -5,7 +5,7 @@ Deployment of a hello world smart contract into Polygon Mumbai testnetwork using
 You can see the transaction details at [https://mumbai.polygonscan.com/address/0xdaDE9f41f5FaD4B1CEc949AA6D3630dd3FE0Be54?s=08](https://mumbai.polygonscan.com/address/0xdaDE9f41f5FaD4B1CEc949AA6D3630dd3FE0Be54?s=08)
 
 ## Prerequisits
-1. NodeJS, hardhat and VSCode
+1. NodeJS and VSCode
 2. [MetaMask](https://metamask.io/download/) should be installed on your chrome browser
 3. Create new app on [alchemy](https://dashboard.alchemy.com/apps) and get the API key
    
@@ -133,9 +133,8 @@ Navigate to scripts folder
 ```
 cd ..
 cd scripts
-notepad deploy.js
 ```
-write this code on deploy.js
+Create a file called deploy.js & write the code
 ```sh
 async function main() {
   const HelloWorld = await ethers.getContractFactory("HelloWorld");
